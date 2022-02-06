@@ -5,10 +5,10 @@
 <mapper namespace="com.codepresso.blog.repository.PostRepository">
     <insert id="save">
         INSERT INTO POST(user_name, title, post_content)
-        VALUES (#{post.userName}, #{post.title}, #{post.postContent})
+        VALUES (#{post.userName}, #{post.title}, #{post.postContent});
     </insert>
     <select id="findAll" resultType="com.codepresso.blog.vo.Post">
-        SELECT * FROM POST
+        SELECT * FROM POST;
     </select>
     <select id="findById" resultType="com.codepresso.blog.vo.Post">
         SELECT * FROM POST WHERE ID = ${id};
@@ -17,6 +17,6 @@
         UPDATE POST SET title=#{post.title}, post_content=#{post.postContent} WHERE ID = #{post.id};
     </update>
     <delete id="deleteById">
-        DELETE FROM POST WHERE ID = ${id}
+        DELETE FROM POST WHERE ID = ${id};
     </delete>
 </mapper>

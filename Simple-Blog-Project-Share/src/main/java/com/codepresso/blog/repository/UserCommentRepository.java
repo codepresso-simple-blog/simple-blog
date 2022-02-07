@@ -1,6 +1,5 @@
 package com.codepresso.blog.repository;
 
-import com.codepresso.blog.vo.Post;
 import com.codepresso.blog.vo.UserComment;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

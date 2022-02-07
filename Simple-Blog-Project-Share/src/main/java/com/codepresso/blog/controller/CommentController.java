@@ -26,5 +26,4 @@ public class CommentController {
         return commentService.getCommentList(postId);
     }
 
-
 }

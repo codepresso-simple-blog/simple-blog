@@ -1,10 +1,8 @@
 package com.codepresso.blog.service;
 
-import com.codepresso.blog.repository.PostRepository;
 import com.codepresso.blog.repository.UserCommentRepository;
-import com.codepresso.blog.vo.Post;
 import com.codepresso.blog.vo.UserComment;
-import org.h2.engine.User;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
